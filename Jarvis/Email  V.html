@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Email Validation</title>
+    <script>
+        function validate(abc) {
+
+            var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+            if (abc.value.match(regx)) {
+                alert("Congratulations! You Have Provided a Valid Mail");
+                document.form1.text1.focus();
+                return true;
+            }
+            else {
+                alert("Sorry! Please Enter a Valid Mail");
+                document.form1.text1.focus();
+                return False;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+        <input id="text" placeholder="Email" type="text"><br><br>
+        <button onclick="validate()" type="button">Submit</button>
+
+    </form>
+
+    <button onclick="validate()" type="button">Submit</button>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <input id="text" placeholder="Email" type="text"><br><br>
+<button onclick="validate()" type="button">Submit</button> -->

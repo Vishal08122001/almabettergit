@@ -1,0 +1,11 @@
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+.bg {
+    background-image: url("../../media/examples/lizard.png");
+}
+
+button {
+    color: rgb(30, 255, 0);
+}

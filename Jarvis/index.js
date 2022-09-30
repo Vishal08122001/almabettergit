@@ -1,13 +1,13 @@
-// console.log("Hello");
-// var r = 5;
-// var s = 6;
+console.log("Hello");
+var r = 5;
+var s = 6;
 
-// if (r >= s) {
-//     console.log("Mujhe Samjh Nhi Aata");
-// }
-// else {
-//     console.log("Vishal");
-// }
+if (r >= s) {
+    console.log("Mujhe Samjh Nhi Aata");
+}
+else {
+    console.log("Vishal");
+}
 
 
 
@@ -60,16 +60,6 @@
 //     default:
 //         console.log("0000");
 // }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -351,8 +341,7 @@
 // console.log(months.sort());
 
 // var number = [7, 12, 4, 6, 2, 0, 86, 23, 23];
-// number.sort();
-// console.log(number.reverse());
+// console.log(number.sort());
 
 
 
@@ -445,15 +434,15 @@
 
 
 
-// const months = ['Jan', 'march', 'April', 'June', 'July'];
+//const months = ['Jan', 'march', 'April', 'June', 'July'];
 //Sol1:-
 
-// const newmonth = months.splice(months.length, 0, 'Dec');
-// console.log(months);
+//const newmonth = months.splice(months.length, 0, 'Dec');
+//console.log(months);
 
 //Sol2 :-
-// const newmonth = months.splice(months.length, 0, 'Dec');
-// console.log(newmonth);
+
+//console.log(newmonth);
 
 
 //Sol3 :-
@@ -471,264 +460,6 @@
 //     months.splice(indexOfJune, 1,);
 // }
 // console.log(months);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//EMAIL VALIDATION:-
-
-// function validate() {
-//     var mail = document.getElementById("text").value;
-//     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-
-//     if (regx.text(mail)) {
-//         alert("Congratulations! You Have Provided a Valid Mail")
-//         return true
-//     }
-//     else {
-//         alert("Sorry! Please Enter a Valid Mail")
-//         return False;
-//     }
-// }
-
-
-
-// validate();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//MAP(), REDUCE(), FILTER()   METHOD:-
-
-
-
-/* MAP() => Map method return a new array containing the result.
-if we use any <, > ,= it returns only value in True and False */
-
-
-
-// const array1 = [1, 4, 9, 16, 25];
-// //num > 9
-
-// let newarr = array1.map((curElem, index, array1) => {
-//     return curElem > 9;
-// })
-// console.log(array1);
-// console.log(newarr);
-
-
-
-
-
-
-
-
-
-
-// const array1 = [1, 4, 9, 16, 25];
-// // num>9
-// let newarr = array1.map((curElem, index, arr) => {
-//     return `Index no. =${index} and the value is ${curElem} belong to ${arr}`
-// })
-
-// console.log(newarr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//FIND THE SQUAREROOT OF ARRAY:-
-
-// let array = [25, 36, 49, 64, 81, 100];
-// let newArr = array.map((curElem) => {
-//     return Math.sqrt(curElem);
-
-// })
-// console.log(newArr);
-
-
-
-
-
-
-
-
-
-
-
-// //FILTER METHOD:-
-
-//MULTIPLY EACH ELEMENT OF ARRAY BY 2 AND RETURN ONLY THOSE WHICH ARE GRATER THEN 10
-
-/* WE WILL USE CHAINING METHOD IN THIS. */
-
-// let arr = [2, 4, 5, 6, 7, 8];
-// let newArr = arr.map((curElem) => curElem * 2).filter((curElem) => curElem > 10);
-
-// console.log(newArr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//REDUCE METHOD :-
-
-////WE USE REDUCE METHOD TO FLATTERN AN ARRAY(TO CONVERT 3D OR 2D ARRAY TO 1D ARRAY)
-
-/* ACCUMULATOR
-   CURRENT VALUE
-   CURRENT INDEX
-   SOURCE ARRAY */
-
-
-// let arr = [5, 6, 2];
-// let sum = arr.reduce((ACCUMULATOR, curElem, index, arr) => {
-//     return ACCUMULATOR = curElem + ACCUMULATOR;
-// }, 7)
-// console.log(sum);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//HOW TO CONVERT 2D OR 3D ARRAY TO 1D;
-
-// const r = [[1, 2, 3], [3, 4, 5], [6, 5, 6]];
-
-
-// let newr = r.reduce((ACCUMULATOR, curElem) => {
-//     return ACCUMULATOR.concat(curElem);
-// })
-// console.log(newr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//STRINGS IN JAVASCRIPT :-
-/* Escape Character
-   Finding a String in a String
-   Searching for a String in a String
-   Extracting String Parts
-   Replacing String Content
-   Extracting String Characters
-   Other useful methods */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
