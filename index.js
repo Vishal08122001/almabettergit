@@ -701,14 +701,6 @@ if we use any <, > ,= it returns only value in True and False */
 
 
 
-
-
-
-
-
-
-
-
 //STRINGS IN JAVASCRIPT :-
 /* Escape Character
    Finding a String in a String
@@ -724,8 +716,6 @@ if we use any <, > ,= it returns only value in True and False */
 
 
 
-
-Hello sdhagdfa
 
 
 

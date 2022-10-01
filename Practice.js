@@ -570,3 +570,103 @@ function getSecondLargest(nums) {
 //     return rec;
 // }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CLASS VS INSTANCE:-
+
+
+function Person(initialAge) {
+    // Add some more code to run some checks on initialAge
+    if (initialAge > 0) this.age = initialAge;
+    else {
+        this.age = 0;
+        console.log("Age is not valid, setting age to 0.");
+    }
+    this.amIOld = function () {
+        // Do some computations in here and print out the correct statement to the console
+        if (this.age < 13) console.log("You are young.");
+        else if (this.age < 18) console.log("You are a teenager.");
+        else console.log("You are old.");
+
+    };
+    this.yearPasses = function () {
+        this.age++;
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//COUNT OBJECT HACKERRANK:-
+
+function getCount(objects) {
+    let count = 0;
+
+    objects.map((curElem) => {
+        if ((curElem.x) === (curElem.y)) { count = count + 1; }
+    })
+
+    return count;
+
+}
+
+
+
+
+
+
+
+
+
+
