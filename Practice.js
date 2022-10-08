@@ -457,23 +457,23 @@
 
 //PRINT SECOND LARGEST NUMBER OF ARRAY
 
-function getSecondLargest(nums) {
-    let max1 = 0;
-    for (const e of nums) {
-        if (max1 < e) {
-            max1 = e;
-        }
-    }
+// function getSecondLargest(nums) {
+//     let max1 = 0;
+//     for (const e of nums) {
+//         if (max1 < e) {
+//             max1 = e;
+//         }
+//     }
 
-    let max2 = 0;
-    for (const e of nums) {
-        if (max2 < e && e < max1) {
-            max2 = e;
-        }
-    }
+//     let max2 = 0;
+//     for (const e of nums) {
+//         if (max2 < e && e < max1) {
+//             max2 = e;
+//         }
+//     }
 
-    return max2;
-}
+//     return max2;
+// }
 
 
 
@@ -595,24 +595,87 @@ function getSecondLargest(nums) {
 //CLASS VS INSTANCE:-
 
 
-function Person(initialAge) {
-    // Add some more code to run some checks on initialAge
-    if (initialAge > 0) this.age = initialAge;
-    else {
-        this.age = 0;
-        console.log("Age is not valid, setting age to 0.");
-    }
-    this.amIOld = function () {
-        // Do some computations in here and print out the correct statement to the console
-        if (this.age < 13) console.log("You are young.");
-        else if (this.age < 18) console.log("You are a teenager.");
-        else console.log("You are old.");
+// function Person(initialAge) {
+//     // Add some more code to run some checks on initialAge
+//     if (initialAge > 0) this.age = initialAge;
+//     else {
+//         this.age = 0;
+//         console.log("Age is not valid, setting age to 0.");
+//     }
+//     this.amIOld = function () {
+//         // Do some computations in here and print out the correct statement to the console
+//         if (this.age < 13) console.log("You are young.");
+//         else if (this.age < 18) console.log("You are a teenager.");
+//         else console.log("You are old.");
 
-    };
-    this.yearPasses = function () {
-        this.age++;
-    };
-}
+//     };
+//     this.yearPasses = function () {
+//         this.age++;
+//     };
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function processData(input) {
+//     //Enter your code here
+//     for (var i = 0; i < input; i++) {
+//         if (a[i] % 2 == 0) { console.log(input[i]) }
+//     }
+// }
+// processData("Hello");
+
+
+
+
+
+// var r = "H4llo World";
+// let s = "";
+// let a = [];
+// for (var i = 0; i < r.length; i++) {
+//     if (i % 2 != 0) {
+//         s = s + r[i];
+
+//     }
+
+// }
+
+// console.log(s)
+
+
+
+// function processData(input) {
+//     //Enter your code here
+//     var s = "";
+//     var v = "";
+//     for (var i = 0; i < input.length; i++) {
+//         if (i % 2 == 0) { s = s + input[i]; }
+//         else { v = v + input[i]; }
+
+//     }
+//     console.log(s + " " + v);
+// }
+// processData("HackerRank");
+
+
+
 
 
 
@@ -650,18 +713,16 @@ function Person(initialAge) {
 
 //COUNT OBJECT HACKERRANK:-
 
-function getCount(objects) {
-    let count = 0;
+// function getCount(objects) {
+//     let count = 0;
 
-    objects.map((curElem) => {
-        if ((curElem.x) === (curElem.y)) { count = count + 1; }
-    })
+//     objects.map((curElem) => {
+//         if ((curElem.x) === (curElem.y)) { count = count + 1; }
+//     })
 
-    return count;
+//     return count;
 
-}
-
-
+// }
 
 
 
@@ -670,3 +731,165 @@ function getCount(objects) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function sides(literals, ...expressions) {
+//     let a = expressions[0];
+//     let p = expressions[1];
+
+//     return [(p - Math.sqrt(p ** 2 - 16 * a)) / 4, (p + Math.sqrt(p ** 2 - 16 * a)) / 4].sort();
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let strings = ["avengers", "captain america", "ironman", "black panther"];
+
+// console.log(strings.map((strings) => strings.toUpperCase()));
+
+
+
+// const heros = [{ name: 'Spider-Man' }, { name: 'Thor' }, { name: 'Black Panther' }, { name: 'Captain Marvel' }, { name: 'Silver Surfer' }];
+
+
+// let a = heros.map((elem, index) => {
+
+//     return {
+//         id: index, hero: elem.name
+//     }
+// });
+
+
+// console.log(a);
+
+
+
+
+
+
+
+
+// const nums = [1, 2, 3];
+
+// nums.slice(0, 1)
+// nums.splice(0, 1)
+// nums.unshift(4)
+
+// console.log(nums);
+
+
+
+
+
+
+
+
+// const shape = {
+//     radius: 10,
+//     diameter() {
+//         return this.radius * 2;
+//     },
+//     perimeter: () => 2 * Math.PI * this.radius,
+// };
+
+// console.log(shape.diameter());
+// console.log(shape.perimeter());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const config = {
+//     languages: [],
+//     set language(lang) {
+//         return this.languages.push(lang);
+//     },
+// };
+
+// console.log(config.language);
+
+
+
+
+// let s = [[0, 1], [2, 3]];
+
+// let z = s.reduce(
+//     (acc, cur) => {
+//         return acc.concat(cur);
+//     },
+//     [1, 2],
+// );
+
+
+// console.log(z);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let a = [1, 2, 3, 4, 5, 6];
+
+let b = a.push(7);
+let c = a.splice(0, 5);
+let d = [...a, 8];
+let e = a.length = 0;
+
+
+console.log(c);
+console.log(d);
+// console.log(e);
